@@ -17,19 +17,19 @@ def stats(request):
                               locals(),
                               context_instance=RequestContext(request))
 
-#def register(request):
+def register(request):
 #    name = nameform(request.POST)
 #    email = emailform(request.POST)
 #    password = passwordform(request.POST)
-#    return render_to_response("register.html",
- #                             locals(),
-#                              context_instance=RequestContext(request))
+    return render_to_response("register.html",
+                              locals(),
+                              context_instance=RequestContext(request))
 
-#def thankyou(request):
+def thankyou(request):
  #   name = nameform(request.POST)
  #   email = emailform(request.POST)
  #   password = passwordform(request.POST)
-#    return render_to_response("thankyou.html")
+    return render_to_response("thankyou.html")
 
 
 #def zero(request):
