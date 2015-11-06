@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'fertilizer',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,7 +109,12 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = 'staticfiles'
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR,'templates')]
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR,'js'),
+    os.path.join(BASE_DIR,'images'),
+    os.path.join(BASE_DIR,'css'),
 )
 
